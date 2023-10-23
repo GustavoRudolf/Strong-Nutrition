@@ -92,10 +92,10 @@ const styles = StyleSheet.create({
   categorias: {
     marginLeft: 20,
     marginRight: 55,
-    marginTop: 10,
+    marginTop: 9,
     marginBottom: 10,
     borderRadius: 10,
-    // padding: 10,
+    padding: 10,
     paddingBottom: 10,
     backgroundColor: "#66b2FF"
   },
