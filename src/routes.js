@@ -38,8 +38,13 @@ function LoginRouter() {
 function HomeRoutes() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Item" component={Item} />
+      <Stack.Screen name="Home" component={Home} options={{
+          headerShown: false 
+        }}/>
+      <Stack.Screen 
+        name="Item" 
+        component={Item} 
+         />
     </Stack.Navigator>
   );
 }
@@ -82,6 +87,7 @@ export default function Routes() {
             name="PRS"
             component={HomeRoutes}
             options={{
+              
               tabBarLabel: "Home",
               tabBarIcon: ({ color }) => (
                 <MaterialIcons name="home" color={color} size={26} />

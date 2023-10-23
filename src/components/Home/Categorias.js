@@ -42,7 +42,7 @@ export default function Categorias({ navigation }) {
             style={styles.categorias}
             onPress={() => navigation.navigate("Item", { item: categoria })}
           >
-            <Text> {categoria.descricao}</Text>
+            <Text style={styles.categoriaTitulo}> {categoria.descricao}</Text>
             <Image
               source={{ uri: categoria.imagem?.url }}
               style={styles.imagem}
@@ -79,14 +79,24 @@ const styles = StyleSheet.create({
     width: 100,
     height: 120,
     borderRadius: 10,
+    marginLeft: 10,
+    marginRight: 10
   },
   categoriaTitulo: {
-    fontSize: 16,
-    marginTop: 10,
-    color: "#999",
+    fontSize: 16,    
+    color: "#fff",
+    backgroundColor: "#0080FF",
+    borderRadius: 10,
+    paddingBottom: 15,
   },
   categorias: {
     marginLeft: 20,
     marginRight: 55,
+    marginTop: 10,
+    marginBottom: 10,
+    borderRadius: 10,
+    // padding: 10,
+    paddingBottom: 10,
+    backgroundColor: "#66b2FF"
   },
 });
